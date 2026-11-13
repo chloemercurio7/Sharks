@@ -8,6 +8,9 @@ website:
       - href: index.qmd
         text: Home
 
+execute:
+  echo: false
+
 format:
   html:
     theme:
