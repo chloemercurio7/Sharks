@@ -13,6 +13,13 @@ attacks <- read_rds("data/attacks.rds")
 
 ```{r}
 attacks |>
-  count(Activity, name = "attacks", sort = TRUE) |>
-  filter(!is.na(Activity), attacks >= 50)
+  filter(!is.na(Activity)) |>
+  add_count(Activity, name = "activity_total") |>
+  filter(activity_total >= 50, Fatal_clean != "Unknown") |>
+  count(Activity, Fatal_clean, name = "attacks") |>
+  pivot_wider(
+    names_from = Fatal_clean,
+    values_from = attacks,
+    values_fill = 0
+  )
 ```

@@ -18,6 +18,6 @@
     "href": "trends.html",
     "title": "Trends",
     "section": "",
-    "text": "# A tibble: 12 × 2\n   Activity      attacks\n   &lt;chr&gt;           &lt;int&gt;\n 1 Surfing           972\n 2 Swimming          791\n 3 Fishing           391\n 4 Spearfishing      334\n 5 Wading            142\n 6 Diving            105\n 7 Standing           94\n 8 Snorkeling         88\n 9 Scuba diving       76\n10 Bathing            74\n11 Body boarding      62\n12 Body surfing       50"
+    "text": "# A tibble: 12 × 3\n   Activity      Fatal `Non-fatal`\n   &lt;chr&gt;         &lt;int&gt;       &lt;int&gt;\n 1 Bathing          31          35\n 2 Body boarding    14          48\n 3 Body surfing      7          40\n 4 Diving           14          78\n 5 Fishing          32         337\n 6 Scuba diving     12          50\n 7 Snorkeling       11          75\n 8 Spearfishing     42         266\n 9 Standing         12          81\n10 Surfing          47         881\n11 Swimming        247         455\n12 Wading           12         120"
   }
 ]
