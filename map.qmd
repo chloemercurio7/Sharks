@@ -23,6 +23,26 @@ write_rds(attacks, "data/attacks.rds")
 ```
 
 ```{r}
+world <- map_data("world") |>
+  mutate(region = str_to_lower(region)) |>
+  left_join(
+    attacks |> count(Country_lower, name = "attacks"),
+    by = c("region" = "Country_lower")
+  )
+
+ggplot(world, aes(x = long, y = lat, group = group, fill = attacks)) +
+  geom_polygon(color = "white", linewidth = 0.1) +
+  coord_quickmap() +
+  scale_fill_gradient(
+    low = "lightyellow",
+    high = "darkred",
+    na.value = "grey90",
+    name = "Attacks"
+  ) +
+  labs(title = "Shark attacks by country")
+```
+
+```{r}
 attacks |>
   count(Fatal_clean, name = "attacks")
 ```
