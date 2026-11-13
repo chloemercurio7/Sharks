@@ -18,7 +18,7 @@ attacks <- read_csv("data/attacks_clean.csv") |>
       TRUE ~ "Unknown"
     )
   )
-attacks
+write_rds(attacks, "data/attacks.rds")
 ```
 
 ```{r}
