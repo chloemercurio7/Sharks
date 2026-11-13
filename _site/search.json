@@ -12,5 +12,12 @@
     "title": "Map",
     "section": "",
     "text": "Rows: 5094 Columns: 15\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (14): Case_Number, Date, Type, Country, Area, Location, Activity, Name, ...\ndbl  (1): Year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\n\n\n\n\n\n\n\n\n# A tibble: 3 × 2\n  Fatal_clean attacks\n  &lt;chr&gt;         &lt;int&gt;\n1 Fatal           943\n2 Non-fatal      3763\n3 Unknown         388"
+  },
+  {
+    "objectID": "trends.html",
+    "href": "trends.html",
+    "title": "Trends",
+    "section": "",
+    "text": "# A tibble: 12 × 2\n   Activity      attacks\n   &lt;chr&gt;           &lt;int&gt;\n 1 Surfing           972\n 2 Swimming          791\n 3 Fishing           391\n 4 Spearfishing      334\n 5 Wading            142\n 6 Diving            105\n 7 Standing           94\n 8 Snorkeling         88\n 9 Scuba diving       76\n10 Bathing            74\n11 Body boarding      62\n12 Body surfing       50"
   }
 ]
