@@ -13,5 +13,13 @@ attacks <- read_rds("data/attacks.rds")
 
 ```{r}
 attacks |>
-  count(Year, name = "attacks")
+  filter(Year != 2018) |>
+  count(Year, name = "attacks") |>
+  ggplot(aes(x = Year, y = attacks)) +
+  geom_line() +
+  labs(
+    title = "Shark attacks per year",
+    x = "Year",
+    y = "Number of attacks"
+  )
 ```

@@ -12,12 +12,5 @@
     "title": "Map",
     "section": "",
     "text": "Rows: 5094 Columns: 15\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (14): Case_Number, Date, Type, Country, Area, Location, Activity, Name, ...\ndbl  (1): Year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\n\n\n\n\n\n\n\n\n\n# A tibble: 3 × 2\n  Fatal_clean attacks\n  &lt;chr&gt;         &lt;int&gt;\n1 Fatal           943\n2 Non-fatal      3763\n3 Unknown         388"
-  },
-  {
-    "objectID": "trends.html",
-    "href": "trends.html",
-    "title": "Trends",
-    "section": "",
-    "text": "# A tibble: 118 × 2\n    Year attacks\n   &lt;dbl&gt;   &lt;int&gt;\n 1  1901       9\n 2  1902      13\n 3  1903       9\n 4  1904      14\n 5  1905      17\n 6  1906      19\n 7  1907      23\n 8  1908      11\n 9  1909      14\n10  1910      12\n# ℹ 108 more rows"
   }
 ]
