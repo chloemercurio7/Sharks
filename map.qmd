@@ -12,3 +12,13 @@ library(maps)
 attacks <- read_csv("data/attacks_clean.csv")
 attacks
 ```
+
+```{r}
+attacks |>
+  mutate(outcome = case_when(
+    Fatal == "Y" ~ "Fatal",
+    Fatal == "N" ~ "Non-fatal",
+    TRUE ~ "Unknown/other"
+  )) |>
+  count(outcome, name = "attacks")
+```
