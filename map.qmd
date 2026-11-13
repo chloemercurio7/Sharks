@@ -1,0 +1,14 @@
+---
+title: "Map"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(maps)
+```
+
+```{r}
+attacks <- read_csv("data/attacks_clean.csv")
+attacks
+```
