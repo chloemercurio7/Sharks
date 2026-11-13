@@ -9,6 +9,7 @@ library(maps)
 ```
 
 ```{r}
+#| cache: true
 attacks <- read_csv("data/attacks_clean.csv") |>
   mutate(
     Country_lower = str_to_lower(str_trim(Country)),
